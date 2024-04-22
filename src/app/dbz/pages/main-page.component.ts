@@ -26,4 +26,9 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() { }
+
+  onNewCharacter(character: Character): void {
+    console.log('main page', character);
+
+  }
 }
