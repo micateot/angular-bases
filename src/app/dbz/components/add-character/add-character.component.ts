@@ -17,11 +17,10 @@ export class AddCharacterComponent {
   }
 
   public emitCharacter(): void {
-    console.log(this.character);
+    debugger;
 
     this.onNewCharacter.emit(this.character);
 
-    this.character.name = '';
-    this.character.power = 0;
+    this.character = {name: '', power: 0};
   }
 }
