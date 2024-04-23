@@ -17,8 +17,7 @@ export class AddCharacterComponent {
   }
 
   public emitCharacter(): void {
-    debugger;
-
+    if(this.character.name == '' || this.character.power == 0) return;
     this.onNewCharacter.emit(this.character);
 
     this.character = {name: '', power: 0};

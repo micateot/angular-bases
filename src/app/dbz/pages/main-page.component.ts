@@ -28,7 +28,12 @@ export class MainPageComponent implements OnInit {
   ngOnInit() { }
 
   onNewCharacter(character: Character): void {
-    console.log('main page', character);
-
+    this.characters.push(character);
+    // this.characters = [...this.characters, character]
   }
+
+  onDeletedCharacter(index: number): void {
+    this.characters.splice(index, 1);
+  }
+
 }
