@@ -5,7 +5,7 @@
         <span class="text-primary">{{i + 1}}. </span><span>{{character.name}}</span>
          - <strong>Power: </strong> <span>{{character.power}}</span>
       </div>
-       <button class="btn btn-danger" (click)="deleteCharacter(i)">X</button>
+       <button class="btn btn-danger" (click)="deleteCharacter(character.uuid)">X</button>
        <!-- <span *ngIf="isEven">Es par</span>
        <span *ngIf="isOdd">Es impar</span> -->
     </li>

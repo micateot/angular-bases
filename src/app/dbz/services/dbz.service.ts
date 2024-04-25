@@ -31,7 +31,7 @@ export class DbzService {
     // this.characters = [...this.characters, character]
   }
 
-  onDeletedCharacter(index: number): void {
-    this.characters.splice(index, 1);
+  deleteCharacterById(uuid?: string): void {
+    this.characters = this.characters.filter((character: Character) => character.uuid !== uuid)
   }
 }
